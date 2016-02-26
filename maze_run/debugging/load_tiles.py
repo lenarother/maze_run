@@ -8,11 +8,14 @@ TILE_POSITIONS = [
     ('*', 0, 3), # player
     ('x', 1, 1), # exit
 ]
+
 SIZE = 32
+
 
 def get_tile_rect(x, y):
     """Converts tile indices to a pygame.Rect"""
     return Rect(x*SIZE, y*SIZE, (x+1)*SIZE, (y+1)*SIZE)
+
 
 def load_tiles():
     """Returns a tuple of (image, tile_dict)"""

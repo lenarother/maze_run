@@ -1,11 +1,16 @@
-
-from event_loop import event_loop
-from load_tiles import load_tiles
-from draw_map import draw_map, level
-from moves import move
+# MR review on 26.02.2016
+# I like that itis short and can be well understood only base on reading
+# Does not run: pygame.error: Couldn't open tiles.xpm
+# Order of imports changed as in PEP8 (with isort)
+# pylint complains about variable names
+# .gitignore and requirements.pip could be added to the repo 
 import pygame
 from pygame import Rect
 
+from draw_map import draw_map, level
+from event_loop import event_loop
+from load_tiles import load_tiles
+from moves import move
 
 pygame.init()
 pygame.display.set_mode((640, 400))

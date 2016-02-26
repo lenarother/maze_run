@@ -1,4 +1,8 @@
-
+# MR 26.03.16
+# Nice! I like that one can change the level and experiment with different thing easily.
+# Runs.
+# Only one function is documented.
+# What about moving level to main?
 from pygame import image, Rect, Surface
 from load_tiles import load_tiles
 

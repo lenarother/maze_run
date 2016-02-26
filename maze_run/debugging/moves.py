@@ -1,10 +1,11 @@
 
-from load_tiles import load_tiles
-from draw_map import draw_map, level
-import pygame
-from pygame import image, Rect
 import sys
 
+import pygame
+from pygame import Rect, image
+
+from draw_map import draw_map, level
+from load_tiles import load_tiles
 
 pygame.init()
 pygame.display.set_mode((640, 400))

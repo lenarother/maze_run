@@ -1,7 +1,8 @@
-
-from pygame.locals import KEYDOWN
-from pygame.event import Event
+# MR 26.02.16
+# while True, how exciting! 
 import pygame
+from pygame.event import Event
+from pygame.locals import KEYDOWN
 
 
 def event_loop(handle_key, delay=10):
@@ -13,6 +14,7 @@ def event_loop(handle_key, delay=10):
             handle_key(event.key)
         pygame.time.delay(delay)
 
+
 def print_key(key):
     print(key)
 
@@ -21,4 +23,3 @@ if __name__ == '__main__':
     pygame.init()
     pygame.display.set_mode((60, 40))
     event_loop(print_key)
-
